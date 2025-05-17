@@ -1,0 +1,13 @@
+Host *
+    ServerAliveInterval 60
+    ControlMaster auto
+    ControlPath ~/.ssh/control/%r@%h:%p
+    ControlPersist 10m
+
+Host *.lan
+    User admin
+    IdentityFile ~/.ssh/id_ed25519
+
+Host *.10g
+    User datauser
+    IdentityFile ~/.ssh/id_ed25519
