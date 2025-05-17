@@ -1,0 +1,5 @@
+# SSH config snippet
+Host phx-ai20-lan
+    HostName 10.0.10.6
+    User crathmene
+    IdentityFile ~/.ssh/id_ed25519

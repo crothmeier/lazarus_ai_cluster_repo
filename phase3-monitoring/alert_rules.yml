@@ -1,0 +1,4 @@
+groups:
+- name: zfs_alerts
+  rules:
+  - alert: ZFSPoolNotOnline
