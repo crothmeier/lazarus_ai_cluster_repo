@@ -1,33 +1,8 @@
-# Prometheus node exporter job configuration
-  - job_name: 'phx-hypervisor26'
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: "phx-hypervisor26"
     static_configs:
-      - targets: ['10.0.10.6:9100']
-        labels:
-          instance: 'phx-hypervisor26'
-          region: 'phoenix'
-          role: 'hypervisor'
-    scrape_interval: 15s
-    scrape_timeout: 10s
-    metrics_path: /metrics
-    relabel_configs:
-      - source_labels: [__address__]
-        target_label: instance
-        regex: '(.*):.*'
-        replacement: '$1'
-    metric_relabel_configs:
-      # CPU metrics
-      - source_labels: [__name__]
-        regex: 'node_cpu_.*'
-        action: keep
-      # Memory metrics
-      - source_labels: [__name__]
-        regex: 'node_memory_.*'
-        action: keep
-      # ZFS metrics
-      - source_labels: [__name__]
-        regex: 'node_zfs_.*'
-        action: keep
-      # GPU metrics
-      - source_labels: [__name__]
-        regex: 'nvidia_.*'
-        action: keep
+      - targets: ["localhost:9100"]

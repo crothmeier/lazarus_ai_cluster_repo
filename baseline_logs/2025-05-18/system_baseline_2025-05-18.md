@@ -1,79 +1,31 @@
-# System Baseline: phx-hypervisor26 (2025-05-18)
+# System Baseline 2025-05-18
 
-## CPU / Memory / NUMA
+## System Information
+Linux phx-ai20 6.8.0-60-generic #63-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 15 19:04:15 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
 
-- **CPU**: Intel(R) Xeon(R) Silver 4210R CPU @ 2.40GHz
-  - 2 Sockets, 10 Cores per socket, 2 Threads per core (40 total threads)
-  - Architecture: x86_64
-- **Memory**: 94GB total, 91GB available
-- **NUMA Configuration**:
-  - Node 0: 47971 MB, CPUs 0-9, 20-29
-  - Node 1: 48330 MB, CPUs 10-19, 30-39
+## Disk Usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           9.5G  2.2M  9.5G   1% /run
+efivarfs        496K  260K  232K  53% /sys/firmware/efi/efivars
+/dev/sdc2       915G   23G  846G   3% /
+tmpfs            48G     0   48G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+/dev/sdc1       1.1G  8.4M  1.1G   1% /boot/efi
+bulk            2.2T  208M  2.2T   1% /bulk
+tmpfs           9.5G   20K  9.5G   1% /run/user/1000
 
-## GPUs
+## Memory Usage
+               total        used        free      shared  buff/cache   available
+Mem:            94Gi       2.2Gi        91Gi       5.2Mi       1.3Gi        91Gi
+Swap:          8.0Gi          0B       8.0Gi
 
-- NVIDIA L4 (24GB)
-  - Driver Version: 550.144.03
-  - CUDA Version: 12.4
-  - Temperature: 35°C
-  - Power Usage: 11W / 72W
+## Service Status
+  UNIT LOAD ACTIVE SUB DESCRIPTION
 
-## Storage & ZFS
+0 loaded units listed.
 
-- ZFS Pool:
-  - bulk: 2.17TB size, 209MB used, ONLINE
-- Disks:
-  - sda: ZFS member (bulk)
-  - sdc: Boot drive (1GB EFI + 845.7GB root)
-  - nvme0n1, nvme1n1: ZFS member (tank)
+## Prometheus Configuration Status
+- Status: Not installed or not running
 
-## Network
-
-- eno5np0: 10.0.10.6/24 (Primary)
-- eno6np1: 192.168.66.20/24
-- docker0: 172.17.0.1/16 (DOWN)
-
-## Sensors / IPMI
-
-- CPU Temperatures:
-  - Package 0: 35.0°C (Critical: 98.0°C)
-  - Package 1: 39.0°C (Critical: 98.0°C)
-- NVMe Temperatures:
-  - nvme0: 35.9°C
-  - nvme1: 29.9°C
-- Power Consumption: 179.00 W
-
-## Services (running / failed)
-
-- Failed Units:
-  - systemd-networkd-wait-online.service
-
-## Backup (restic snapshot + restore test)
-
-- RESTIC_REPO environment variable: Not set
-- /etc/restic/env: Not found
-- ~/.restic_env: Not found
-- **Status**: Cannot perform backup/restore tests  
-
-## Observability (Prometheus target state)
-
-- /etc/prometheus/prometheus.yml: Not found
-- Example configuration created at: ~/baseline_logs/2025-05-18/prometheus-config.yml
-- **Status**: Prometheus not configured  
-
-## Firmware / Drivers
-
-- BIOS Version: U32
-  - Newer version available: U33  
-  - Downloaded to: ~/baseline_logs/2025-05-18/bios_update.txt
-- NVIDIA Driver: 550.144.03
-  - Newer version available: 555.52  
-  - Downloaded to: ~/baseline_logs/2025-05-18/nvidia_driver_update.txt
-
-## ™ Remediation Log
-
-1. Created example Prometheus configuration for phx-hypervisor26
-2. Found newer BIOS available (U33)
-3. Found newer NVIDIA driver available (555.52)
-4. RESTIC_REPO environment variable not found
-5. Found failed systemd unit: systemd-networkd-wait-online.service
+## Restic Backup Status
+- Restore test: FAILED (could not access restic environment)

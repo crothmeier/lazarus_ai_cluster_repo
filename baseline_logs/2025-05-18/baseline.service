@@ -1,0 +1,12 @@
+[Unit]
+Description=Monthly System Baseline Service
+After=network.target
+
+[Service]
+Type=oneshot
+User=crathmene
+ExecStart=/home/crathmene/baseline_logs/remediate.sh
+WorkingDirectory=/home/crathmene
+
+[Install]
+WantedBy=multi-user.target

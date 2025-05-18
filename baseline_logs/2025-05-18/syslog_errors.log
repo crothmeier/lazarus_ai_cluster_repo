@@ -1,0 +1,20 @@
+2025-05-18T05:29:23.604972+00:00 phx-ai20 (udev-worker)[958]: sdc2: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/sdc2' failed with exit code 1.
+2025-05-18T05:29:23.604977+00:00 phx-ai20 (udev-worker)[902]: sdc1: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/sdc1' failed with exit code 1.
+2025-05-18T05:29:23.604987+00:00 phx-ai20 (udev-worker)[910]: sdb1: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/sdb1' failed with exit code 1.
+2025-05-18T05:29:23.605020+00:00 phx-ai20 (udev-worker)[883]: sda: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/sda' failed with exit code 1.
+2025-05-18T05:29:23.605024+00:00 phx-ai20 (udev-worker)[908]: sda1: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/sda1' failed with exit code 1.
+2025-05-18T05:29:23.605028+00:00 phx-ai20 (udev-worker)[910]: sda9: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/sda9' failed with exit code 1.
+2025-05-18T05:29:23.605117+00:00 phx-ai20 zfs[1532]: failed to lock /etc/exports.d/zfs.exports.lock: No such file or directory
+2025-05-18T05:29:23.605527+00:00 phx-ai20 systemd[1]: Started fail2ban.service - Fail2Ban Service.
+2025-05-18T05:29:23.605656+00:00 phx-ai20 zfs[1720]: failed to lock /etc/exports.d/zfs.exports.lock: No such file or directory
+2025-05-18T05:29:23.606702+00:00 phx-ai20 kernel: pci 0000:5c:00.0: ROM [mem size 0x00200000 pref]: failed to assign
+2025-05-18T05:29:23.606854+00:00 phx-ai20 kernel: i8042: probe of i8042 failed with error -5
+2025-05-18T05:29:23.607461+00:00 phx-ai20 kernel: nvidia: module verification failed: signature and/or required key missing - tainting kernel
+2025-05-18T05:29:23.687711+00:00 phx-ai20 fail2ban-server[1705]: 2025-05-18 05:29:23,687 fail2ban.configreader   [1705]: WARNING 'allowipv6' not defined in 'Definition'. Using default one: 'auto'
+2025-05-18T05:29:23.694455+00:00 phx-ai20 containerd[1824]: time="2025-05-18T05:29:23.694104731Z" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.aufs\"..." error="aufs is not supported (modprobe aufs failed: exit status 1 \"modprobe: FATAL: Module aufs not found in directory /lib/modules/6.8.0-60-generic\\n\"): skip plugin" type=io.containerd.snapshotter.v1
+2025-05-18T05:29:23.913978+00:00 phx-ai20 fail2ban-server[1705]: Server ready
+2025-05-18T05:31:23.485823+00:00 phx-ai20 systemd[1]: systemd-networkd-wait-online.service: Failed with result 'exit-code'.
+2025-05-18T05:31:23.486061+00:00 phx-ai20 systemd[1]: Failed to start systemd-networkd-wait-online.service - Wait for Network to be Configured.
+2025-05-18T05:31:23.486965+00:00 phx-ai20 systemd[1]: Started update-notifier-download.timer - Download data for packages that failed at package install time.
+2025-05-18T05:34:32.605132+00:00 phx-ai20 systemd[1]: Starting update-notifier-download.service - Download data for packages that failed at package install time...
+2025-05-18T05:34:32.709337+00:00 phx-ai20 systemd[1]: Finished update-notifier-download.service - Download data for packages that failed at package install time.

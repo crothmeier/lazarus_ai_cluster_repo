@@ -1,0 +1,15 @@
+NAME        MODEL                     SIZE TYPE MOUNTPOINT
+sda         LOGICAL VOLUME            2.2T disk 
+├─sda1                                2.2T part 
+└─sda9                                  8M part 
+sdb         SD/MMC CRW               59.7G disk 
+└─sdb1                                  4G part 
+sdc         LOGICAL VOLUME          931.5G disk 
+├─sdc1                                  1G part /boot/efi
+└─sdc2                              930.4G part /
+nvme1n1     Samsung SSD 990 PRO 1TB 931.5G disk 
+└─nvme1n1p1                         931.5G part 
+nvme0n1     Samsung SSD 990 EVO 1TB 931.5G disk 
+├─nvme0n1p1                             1G part 
+├─nvme0n1p2                           100G part 
+└─nvme0n1p4                         830.5G part 

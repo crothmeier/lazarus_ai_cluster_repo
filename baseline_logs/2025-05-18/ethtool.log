@@ -1,0 +1,20 @@
+driver: bnxt_en
+version: 6.8.0-60-generic
+firmware-version: 226.0.145.0/pkg 226.1.107000
+expansion-rom-version: 
+bus-info: 0000:5d:00.0
+supports-statistics: yes
+supports-test: yes
+supports-eeprom-access: yes
+supports-register-dump: yes
+supports-priv-flags: no
+driver: bnxt_en
+version: 6.8.0-60-generic
+firmware-version: 226.0.145.0/pkg 226.1.107000
+expansion-rom-version: 
+bus-info: 0000:5d:00.1
+supports-statistics: yes
+supports-test: yes
+supports-eeprom-access: yes
+supports-register-dump: yes
+supports-priv-flags: no

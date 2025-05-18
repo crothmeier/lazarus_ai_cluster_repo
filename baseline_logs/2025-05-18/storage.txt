@@ -1,0 +1,15 @@
+NAME        FSTYPE     FSVER LABEL UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+sda                                                                                    
+├─sda1      zfs_member 5000  bulk  5567256621999173876                                 
+└─sda9                                                                                 
+sdb                                                                                    
+└─sdb1      vfat       FAT16       517C-8955                                           
+sdc                                                                                    
+├─sdc1      vfat       FAT32       1CCD-57A1                                 1G     1% /boot/efi
+└─sdc2      ext4       1.0         747afa6e-d642-4a13-a11c-3d6efb2ea261  845.7G     2% /
+nvme1n1                                                                                
+└─nvme1n1p1 zfs_member 5000  tank  15826365881417218658                                
+nvme0n1                                                                                
+├─nvme0n1p1                                                                            
+├─nvme0n1p2 ext4       1.0         539f8f14-1eb7-4174-abf5-2ab552d9575f                
+└─nvme0n1p4 zfs_member 5000  tank  15826365881417218658                                
