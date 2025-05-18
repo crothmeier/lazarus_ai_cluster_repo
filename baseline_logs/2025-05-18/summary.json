@@ -1,7 +1,7 @@
 {
-  "restic_ok": false,
-  "prometheus": "not_installed",
-  "warnings": 2,
-  "timestamp": "2025-05-18T06:38:48+00:00",
+  "restic_ok": true,
+  "prometheus": "configured",
+  "warnings": 0,
+  "timestamp": "2025-05-18T06:46:41+00:00",
   "hostname": "phx-ai20"
 }
