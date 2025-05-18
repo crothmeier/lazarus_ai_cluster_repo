@@ -1,0 +1,8 @@
+{
+  "failed_units": ["systemd-networkd-wait-online.service"],
+  "restic_ok": false,
+  "prometheus": "missing",
+  "needs_bios_update": true,
+  "needs_gpu_driver_update": true,
+  "warnings": 4
+}
